@@ -2,7 +2,7 @@ services:
   windows:
     image: dockurr/windows
     environment:
-      DISK_SIZE: "240G"
+      DISK_SIZE: "64G"
       RAM_SIZE: "32G"
       CPU_CORES: "16"
       DISK_TYPE: "ide"
@@ -19,4 +19,4 @@ services:
       - /mnt:/storage
       - /isos/a.iso:/custom.iso
       - /isos/driver.iso:/driver.iso
-    stop_grace_period: 2m
+    stop_grace_period: 1m
